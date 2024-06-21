@@ -29,7 +29,7 @@ public class locatorsGuvi {
 		//Declare and initialise a Explicit wait,also specify the timouts of the wait
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(2));
 		
-		 //Using ID locator with the Explicit wait
+		//Using ID locator with the Explicit wait
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("name"))).
 		sendKeys("Abinaya");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("email"))).
@@ -60,13 +60,13 @@ public class locatorsGuvi {
 		for(int i = 0; i < list.size(); i++){
 		System.out.println(list.get(i).getText());
 		}
-        //Closing the browser
-       // driver.close();
+        	//Closing the browser
+      		// driver.close();
 		
-        //Using CSS Selector (Combining Attributes)
-       /* //Tagname ans ID using [#]
-        driver.findElement(By.cssSelector("input#name")).sendKeys("Abinaya");
-        Thread.sleep(2000);
+       		 //Using CSS Selector (Combining Attributes)
+       		/*//Tagname ans ID using [#]
+        	driver.findElement(By.cssSelector("input#name")).sendKeys("Abinaya");
+        	Thread.sleep(2000);
 		driver.findElement(By.cssSelector("input#email")).sendKeys("abivicky1992@gmail.com");
 		 Thread.sleep(2000);
 		driver.findElement(By.cssSelector("input#password")).sendKeys("abivicky@123");
@@ -94,9 +94,9 @@ public class locatorsGuvi {
 		
 		/* //Tag and class stats-with(^ exponent) symbol. Matching a prefix.
 		 driver.findElement(By.cssSelector("input[id^='na']")).sendKeys("Abinaya");
-	     Thread.sleep(2000);
-	     driver.findElement(By.cssSelector("input[id^='em']")).sendKeys("abivicky1992@gmail.com");
-	     Thread.sleep(2000);
+	     	 Thread.sleep(2000);
+	    	 driver.findElement(By.cssSelector("input[id^='em']")).sendKeys("abivicky1992@gmail.com");
+	    	 Thread.sleep(2000);
 		 driver.findElement(By.cssSelector("input[id^='pa']")).sendKeys("abivicky@123");
 		 Thread.sleep(2000);
 		 driver.findElement(By.cssSelector("input[id^='mo']")).sendKeys("9876543210");
@@ -104,22 +104,22 @@ public class locatorsGuvi {
 		 driver.findElement(By.cssSelector("a[id^='sign']")).click();    */
 		
 		/* //Tag and class ends-with($ dollar) symbol. Matching a suffix. 
-		 driver.findElement(By.cssSelector("input[id$='me']")).sendKeys("Abinaya");
-	     Thread.sleep(2000);
-	     driver.findElement(By.cssSelector("input[id$='il']")).sendKeys("abivicky1992@gmail.com");
-	     Thread.sleep(2000);
-		 driver.findElement(By.cssSelector("input[id$='rd']")).sendKeys("abivicky@123");
-		 Thread.sleep(2000);
-		 driver.findElement(By.cssSelector("input[id$='ber']")).sendKeys("9876543210");
-		 Thread.sleep(2000);
-		 driver.findElement(By.cssSelector("a[id$='btn']")).click(); */
+		driver.findElement(By.cssSelector("input[id$='me']")).sendKeys("Abinaya");
+	     	Thread.sleep(2000);
+	     	driver.findElement(By.cssSelector("input[id$='il']")).sendKeys("abivicky1992@gmail.com");
+	     	Thread.sleep(2000);
+		driver.findElement(By.cssSelector("input[id$='rd']")).sendKeys("abivicky@123");
+		Thread.sleep(2000);
+		driver.findElement(By.cssSelector("input[id$='ber']")).sendKeys("9876543210");
+		Thread.sleep(2000);
+		driver.findElement(By.cssSelector("a[id$='btn']")).click(); */
 		  
 		
 	/*	//Tagname and attribute using tagname [attribute='value']syntax
 		 driver.findElement(By.cssSelector("input[id='name']")).sendKeys("Abinaya");
-	     Thread.sleep(2000);
-	     driver.findElement(By.cssSelector("input[type='email']")).sendKeys("abivicky1992@gmail.com");
-	     Thread.sleep(2000);
+	     	Thread.sleep(2000);
+	     	driver.findElement(By.cssSelector("input[type='email']")).sendKeys("abivicky1992@gmail.com");
+	     	Thread.sleep(2000);
 		 driver.findElement(By.cssSelector("input[type='password']")).sendKeys("abivicky@123");
 		 Thread.sleep(2000);
 		 driver.findElement(By.cssSelector("input[style='padding-left: 81px;']")).sendKeys("9876543210");
@@ -129,9 +129,9 @@ public class locatorsGuvi {
 	/*	//Tagname,class and attribute [attribute='value']syntax
 		
 		 driver.findElement(By.cssSelector(" input.form-control[id='name']")).sendKeys("Abinaya");
-	     Thread.sleep(2000);
-	     driver.findElement(By.cssSelector("input.form-control[type='email']")).sendKeys("abivicky1992@gmail.com");
-	     Thread.sleep(2000);
+	    	 Thread.sleep(2000);
+	    	 driver.findElement(By.cssSelector("input.form-control[type='email']")).sendKeys("abivicky1992@gmail.com");
+	     	Thread.sleep(2000);
 		 driver.findElement(By.cssSelector("input.form-control[type='password']")).sendKeys("abivicky@123");
 		 Thread.sleep(2000);
 		 //driver.findElement(By.cssSelector("input.form-control[style='padding-left: 81px;']")).sendKeys("9876543210");
@@ -168,17 +168,17 @@ public class locatorsGuvi {
 		driver.findElement(By.xpath("//a[@id='signup-btn'][@class='btn signup-btn']")).click();
 	
 	*/
-	/*	//Relative XPath with contains method. syntax : //tagname [contains(@attributeName2,’attributeValue’)]
+	/*	//Relative XPath with contains method. syntax : //tagname [contains(@attributeName2,Â’attributeValueÂ’)]
 		driver.findElement(By.xpath("//input[contains(@id,'name')]")).sendKeys("Abinaya");
 		driver.findElement(By.xpath("//input[contains(@id,'ail')]")).sendKeys("abivicky1992@gmail.com");
 		driver.findElement(By.xpath("//input[contains(@type,'wor')]")).sendKeys("abivicky@123");
 		driver.findElement(By.xpath("//input[contains(@style,'left')]")).sendKeys("9876543210");
 		driver.findElement(By.xpath("//a[contains(@id,'signup')]")).click(); 
 	*/	
-	/*	//XPath Using text() method: with syntax //tagname[text()=’textvalue’]
+	/*	//XPath Using text() method: with syntax //tagname[text()=Â’textvalueÂ’]
 		driver.findElement(By.xpath("//a[text()='Login']")).click();
 	*/
-	/*	//XPath Using contains text() method: with syntax //tagname[contains(text(),’textvalue’)]
+	/*	//XPath Using contains text() method: with syntax //tagname[contains(text(),Â’textvalueÂ’)]
 		driver.findElement(By.xpath("//a[contains(text(),'Login')]")).click();
 	*/
 	/*	//XPath Using starts-with() method with syntax: //tagname[starts-with(@attribute_name1,'attribute_value1')]
